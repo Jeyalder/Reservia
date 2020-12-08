@@ -1,0 +1,86 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+/*RESET*/
+
+/*GLOBAL*/
+:root {
+    --main-blue: #0065fc;
+    --light-blue: #deebff;
+    --background-white: #ffffff;
+    --grey: #f2f2f249;
+}
+
+* {
+    font-family: raleway, sans-serif;
+}
+
+body {
+    background-color: var(--background-white);
+}
+/*GLOBAL*/
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "grid_logo grid_inscription"
+        "grid_hebergements grid_activites";
+}
+
+header a {
+    color: var(--main-blue);
+    text-decoration: none;
+}
+
+.logo {
+    grid-area: grid_logo;
+    padding-left: 20px;
+}
+
+.activites,
+.hebergements {
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    border-bottom: solid;
+    padding-bottom: 13px;
+}
+
+.inscription {
+    padding-right: 20px;
+    grid-area: grid_inscription;
+    justify-self: end;
+    align-self: center;
+    font-weight: 800;
+}
+
+.hebergements {
+    grid-area: grid_hebergements;
+    border-color: var(--main-blue);
+}
+
+.activites {
+    grid-area: grid_activites;
+    border-color: var(--grey);
+}
+
+.activites:active {
+    border-color: var(--main-blue);
+}
+
+/*RESPONSIVE*/
+@media (min-width: 992px) {
+    body {
+    }
+}
+
+/*HEADER*/
