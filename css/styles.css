@@ -50,7 +50,7 @@ header a {
 .hebergements {
     text-align: center;
     align-self: center;
-    font-weight: 600;
+    font-weight: 500;
     border-bottom: solid;
     padding-bottom: 13px;
 }
@@ -70,6 +70,7 @@ header a {
 
 .activites {
     grid-area: grid_activites;
+    color: black;
     border-color: var(--grey);
 }
 
@@ -80,7 +81,34 @@ header a {
 /*RESPONSIVE*/
 @media (min-width: 992px) {
     body {
+        margin: 0 26px 0 26px;
+    }
+    header {
+        display: flex;
+    }
+    .activites,
+    .hebergements {
+        padding-bottom: 0px;
+        border-bottom: none;
+        width: 162px;
+        padding-top: 45px;
+        border-top: solid 2px;
+    }
+    .hebergements {
+        margin-left: auto;
+    }
+    .activites {
+        border-color: var(--grey);
+    }
+    .inscription {
+        order: 4;
+        padding: 46px 0 0 0;
+        width: 162px;
+        text-align: center;
+    }
+    .logo {
+        padding: 63px 0 0 0;
     }
 }
-
+/*RESPONSIVE*/
 /*HEADER*/
