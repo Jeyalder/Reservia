@@ -23,7 +23,7 @@ body {
 body {
     background-color: var(--background-white);
 }
-/*GLOBAL*/
+/* END GLOBAL*/
 
 /*HEADER*/
 header {
@@ -116,7 +116,21 @@ a {
     }
 }
 /*RESPONSIVE*/
-/*HEADER*/
+/*END HEADER*/
+
+/* MAIN */
+.filters button {
+    border: none;
+}
+
+.filters button:hover,
+button:checked,
+button:active,
+button:focus {
+    background-color: var(--main-blue);
+}
+
+/* END MAIN */
 
 /* FOOTER */
 footer {
@@ -163,4 +177,4 @@ li {
 } */
 
 /*RESPONSIVE*/
-/* FOOTER */
+/* END FOOTER */
