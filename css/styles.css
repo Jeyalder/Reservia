@@ -119,6 +119,62 @@ a {
 /*END HEADER*/
 
 /* MAIN */
+
+main {
+    padding: 20px;
+}
+
+.intro h2 {
+    margin-bottom: 0px;
+}
+
+.searchbox {
+    border: solid 1px var(--grey);
+    border-radius: 11px;
+    height: 51px;
+    min-width: 333px;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.searchbox input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: raleway;
+    font-weight: bold;
+}
+
+.searchbox textarea {
+}
+
+.location-icon,
+.search-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.search-icon {
+    background-color: var(--main-blue);
+}
+
+.location-icon {
+    background-color: var(--grey);
+}
+
+.fa-map-marker-alt,
+.fa-search {
+    font-size: 19px;
+}
+
 .filters button {
     border: none;
 }
