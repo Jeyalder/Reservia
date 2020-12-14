@@ -249,23 +249,28 @@ button:focus {
 .popular {
     background-color: var(--grey);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .fa-chart-line {
     font-size: 1.5em;
 }
 
-.popular article {
+article {
     background-color: var(--grey);
     padding: 5px 0px 5px 5px;
     border-radius: 20px;
     margin-bottom: 12px;
     height: 144px;
+    width: 335px;
     box-shadow: 0px 8px 15px var(--dark-grey);
 }
 
@@ -281,10 +286,10 @@ h2 {
     width: 165px;
     display: inline-block;
     position: relative;
-    top: -10px;
+    top: -13px;
 }
 
-.popular article .description h4 {
+article .description h4 {
     margin-bottom: 14px;
 }
 
@@ -292,8 +297,16 @@ h2 {
     margin-top: -12px;
 }
 
+article .description p {
+    margin-top: -14px;
+}
+
 .popular article .fa-star {
     margin-top: 23px;
+}
+
+.fa-star {
+    font-size: 12px;
 }
 
 .grey {
@@ -305,6 +318,44 @@ h2 {
 }
 
 /* HOTELS */
+
+.hotels {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotels article img {
+    height: 114px;
+    width: 323px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    margin-right: 16px;
+}
+
+.hotels article {
+    height: 199px;
+}
+
+.hotels article .description {
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.hotels article .description h4 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.hotels article .description p {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.hotels article .fa-star {
+    margin-top: 0px;
+}
 
 /* END MAIN */
 
